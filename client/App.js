@@ -6,11 +6,13 @@ import { Resliqi } from "./components/Projects/Resliqi";
 import { ContactMe } from "./components/ContactMe";
 import { Library } from "./components/Library/Library";
 import { About } from "./components/About";
+import { NavBarMain } from "./components/NavBar/NavBarMain";
 
 export const App = () => {
   return (
     <div>
       <BrowserRouter>
+        <NavBarMain />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="home" element={<Home />} />
