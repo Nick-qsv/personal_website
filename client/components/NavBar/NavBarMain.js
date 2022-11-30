@@ -32,29 +32,37 @@ export const NavBarMain = () => {
     <div>
       <ThemeProvider theme={theme}>
         <Box sx={{ flexGrow: 1 }}>
-          <AppBar position="fixed" sx={{ height: "80px" }}>
+          <AppBar position="fixed" sx={{ height: "80px" }} elevation={0}>
             <Toolbar>
               <Link to="home">
                 <Box
                   component="img"
                   src={"https://i.postimg.cc/9Q80DFGG/Nicolas-1-ts.png"}
                   sx={{
-                    height: 60,
-                    width: 70.8,
-                    marginTop: 0.7,
+                    height: 75,
+                    width: 88.5,
+                    marginTop: 5,
                     marginLeft: 0.2,
                   }}
                 />
               </Link>
-              <Box sx={{ display: { xs: "none", sm: "none", md: "flex" } }}>
+              <Box
+                component="div"
+                sx={{
+                  display: { xs: "none", sm: "none", md: "flex" },
+                  justifyContent: "flex-end",
+                  flexGrow: 1,
+                  marginTop: 3,
+                }}
+              >
                 <Link to="about" style={{ textDecoration: "none" }}>
                   <Typography
                     variant="p"
                     component="div"
                     sx={{
-                      fontSize: "25px",
-                      marginLeft: 1,
-                      marginRight: 1,
+                      fontSize: "20px",
+                      marginLeft: 2,
+                      marginRight: 2,
                       fontFamily: "DM Sans",
                       letterSpacing: "0.1rem",
                       color: "black",
@@ -63,10 +71,56 @@ export const NavBarMain = () => {
                     About
                   </Typography>
                 </Link>
+
+                <Link to="projects" style={{ textDecoration: "none" }}>
+                  <Typography
+                    variant="p"
+                    component="div"
+                    sx={{
+                      fontSize: "20px",
+                      marginLeft: 2,
+                      marginRight: 2,
+                      fontFamily: "DM Sans",
+                      letterSpacing: "0.1rem",
+                      color: "black",
+                    }}
+                  >
+                    Projects
+                  </Typography>
+                </Link>
+                <Link to="library" style={{ textDecoration: "none" }}>
+                  <Typography
+                    variant="p"
+                    component="div"
+                    sx={{
+                      fontSize: "20px",
+                      marginLeft: 2,
+                      marginRight: 2,
+                      fontFamily: "DM Sans",
+                      letterSpacing: "0.1rem",
+                      color: "black",
+                    }}
+                  >
+                    Library
+                  </Typography>
+                </Link>
+                <Link to="contactme" style={{ textDecoration: "none" }}>
+                  <Typography
+                    variant="p"
+                    component="div"
+                    sx={{
+                      fontSize: "20px",
+                      marginLeft: 2,
+                      marginRight: 2,
+                      fontFamily: "DM Sans",
+                      letterSpacing: "0.1rem",
+                      color: "black",
+                    }}
+                  >
+                    Contact
+                  </Typography>
+                </Link>
               </Box>
-              <Link to="projects"></Link>
-              <Link to="library"></Link>
-              <Link to="contactme"></Link>
             </Toolbar>
           </AppBar>
           <Toolbar />
