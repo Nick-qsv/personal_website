@@ -51,7 +51,7 @@ export const NavBarMain = () => {
     <Menu
       anchorEl={mobileMoreAnchorEl}
       anchorOrigin={{
-        vertical: "top",
+        vertical: "bottom",
         horizontal: "right",
       }}
       id={mobileMenuId}
@@ -97,6 +97,39 @@ export const NavBarMain = () => {
         </Link>
       </MenuItem>
       <Divider />
+      <MenuItem>
+        <Link to="library" style={{ textDecoration: "none" }}>
+          <Box component="div" sx={{ display: "flex" }}>
+            <AutoStoriesIcon style={{ color: "black" }} />
+            <Typography
+              sx={{
+                fontFamily: "DM Sans",
+                color: "black",
+                marginLeft: 0.5,
+              }}
+            >
+              Library
+            </Typography>
+          </Box>
+        </Link>
+      </MenuItem>
+      <Divider />
+      <MenuItem>
+        <Link to="contact" style={{ textDecoration: "none" }}>
+          <Box component="div" sx={{ display: "flex" }}>
+            <CallIcon style={{ color: "black" }} />
+            <Typography
+              sx={{
+                fontFamily: "DM Sans",
+                color: "black",
+                marginLeft: 0.5,
+              }}
+            >
+              Contact
+            </Typography>
+          </Box>
+        </Link>
+      </MenuItem>
     </Menu>
   );
 
